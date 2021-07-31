@@ -1,0 +1,629 @@
+<?php
+include("submit.php");
+error_reporting(0);
+?>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <title>PMIT - IIT JU Online Admission</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link href="http://www.pmit.iitju.edu.bd/assets/css/bootstrap.min.css" rel="stylesheet" media="all" />
+    <link href="http://www.pmit.iitju.edu.bd/assets/css/bootstrap-responsive.min.css" rel="stylesheet" media="all" />
+    <link href="http://www.pmit.iitju.edu.bd/assets/css/font-awesome.css" rel="stylesheet" media="all" />
+    <link href="http://www.pmit.iitju.edu.bd/assets/css/style.css" rel="stylesheet" media="all" />
+    <link href="http://www.pmit.iitju.edu.bd/assets/css/pages/faq.css" rel="stylesheet" media="all" />
+    <link href="http://www.pmit.iitju.edu.bd/assets/css/pace/pace.css" rel="stylesheet" media="all" />
+    <link href="http://www.pmit.iitju.edu.bd/assets/css/custom.css" rel="stylesheet" media="all" />
+
+
+    <link href="http://www.pmit.iitju.edu.bd/assets/css/calender/jquery-ui.css" rel="stylesheet" media="all" />
+
+    <link rel="shortcut icon" href="http://www.pmit.iitju.edu.bd/assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="http://www.pmit.iitju.edu.bd/assets/img/favicon.ico" type="image/x-icon">
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600" rel="stylesheet">
+
+    <link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script src="http://www.pmit.iitju.edu.bd/assets/js/jquery-1.7.2.min.js"></script>
+    <script src="http://www.pmit.iitju.edu.bd/assets/js/bootstrap.js"></script>
+    <script src="http://www.pmit.iitju.edu.bd/assets/js/pace/pace.js"></script>
+    <script src="http://www.pmit.iitju.edu.bd/assets/js/jquery.checknet-1.6.min.js"></script>
+    <!--<script src=""></script>-->
+    <script src="http://www.pmit.iitju.edu.bd/assets/js/highlight.js"></script>
+    <script src="http://www.pmit.iitju.edu.bd/assets/js/custom.js"></script>
+
+    <script src="http://www.pmit.iitju.edu.bd/assets/js/jquery.maskedinput.min.js"></script>
+
+    <style type="text/css">
+        .auto-style1 {
+            text-align: center;
+            text-decoration: underline;
+            font-size: medium;
+        }
+        .auto-style2 {
+            text-align: center;
+            font-size: medium;
+        }
+    </style>
+    <style media="print">
+        .noPrint{ display: none;
+        }
+    </style>
+
+    <!--<script>
+        $(document).ready(function(){
+            $.fn.checknet();
+            checknet.config.checkInterval = 100;
+            checknet.config.warnMsg = "There is no connection!!";
+        });
+    </script>-->
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
+
+
+
+	
+	<!-- style sheets -->
+	<link rel="stylesheet" type="text/css" href="admin/css/bootstrap.min.css" media="all">
+	<link rel="stylesheet" type="text/css" href="admin/css/font-awesome.min.css" media="all">
+	<link rel="stylesheet" type="text/css" href="admin/css/normalize.css" media="all">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/owl.transitions.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="style.css" media="all">
+	<link rel="stylesheet" type="text/css" href="process.css" media="all">
+	
+	<!-- <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"> -->
+	<link rel="shortcut icon" type="image/x-icon" href="favicon2.png" />
+	
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Diplomata+SC" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Merriweather" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">  	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="admin/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	
+	
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div class="header-area"> 
+		<div class="logo-menu">
+			<div class="container"> 
+				<!-- <div class="row ">  --> 
+					
+					<div class="logo-area col-md-2"> 
+						<b><a href="#"><h1 style = "color: white;">IIT, JU</h1></a></b>
+						<p style = "color:white">PMIT Online Application</p>
+					</div>
+					<div class="menu  col-md-10"> <!-- col-md-offset-1 -->
+						<ul>
+							<li ><a href="index.html">home</a></li>
+							<li class="current"><a href="PMIT Online Application.html">PMIT Online Application</a></li>
+						
+							<li><a href="Payment Status.html">Payment Status</a></li>
+							<li><a href="Forget Pin.html">Forget Pin</a> 
+								<ul>
+									<li><a href="process.html">registration process</a></li>
+									<!-- <li><a href="register.php">registration form</a></li> -->
+								</ul>
+							</li>
+							<li><a href="Admit Card Download.html">Admit Card Download</a></li>
+							<li><a href="result.html">result</a></li>
+						</ul>
+					</div>
+			</div>
+		</div>
+</div>
+
+ 
+<!--
+
+<li><a href="http://pmit.iitju.edu.bd/assets/download/PMIT-PGDIT Admission Test Seat Plan-Summer.pdf"><font color="red">Seat Plan- PMIT & PGDIT Admission Test: Summer 2018</font></a></li>  
+<li><a href="http://pmit.iitju.edu.bd/assets/download/PMIT Admission Test Result- Fall2018_web.pdf">PMIT Admission Test Result- Fall 2018 (Merit & Waiting List)</a></li>
+
+
+ 
+
+<li><a href="http://pmit.iitju.edu.bd/assets/download/PMIT Admission Brochure- Summer 2019.pdf"><font color="red">PMIT Admission Brochure- Summer 2019</font></a></li>
+
+<li><a href="http://pmit.iitju.edu.bd/assets/download/CircularSum2019.pdf"><font color="red">PMIT Admission Circular- Summer 2019</font></a></li>  
+
+<li><a href="http://pmit.iitju.edu.bd/assets/download/PMIT Offline Application Form- Summer 2019.pdf"><font color="red">PMIT Offline Application Form</font></a></li>  
+
+<li><a href="http://pmit.iitju.edu.bd/assets/download/PMIT Summer Semester Class Routine 2018_Ramadan.pdf">PMIT Class Routine- Summer 2018</a></li>
+
+
+ <li><a href="http://pmit.iitju.edu.bd/assets/download/PMIT Bus Schedule- Spring 2018.pdf">PMIT Bus Schedule- Spring 2018</a></li>
+
+                            
+                        </ul>
+                    </li>
+-->
+<!--
+
+<li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-link"></i> Links<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://www.juniv.edu">JU Home</a></li>
+                            <li class="divider"></li>
+                             <li><a href="http://www.juniv.edu/institute/iit">IIT Home</a></li>
+                             <li class="divider"></li>
+                             <li><a href="https://www.ju-admission.org">JU Admission</a></li>
+                              <li class="divider"></li>
+                             <li><a href="http://www.pgdit.iitju.edu.bd">PGDIT Admission</a></li>
+                             <li><a href="http://www.certificatecourse.iitju.edu.bd">Certificate Course Admission</a></li>
+                               
+                        </ul>
+                        </li>  
+
+	-->	
+<!--
+                        <li class="active">
+
+                        </li>
+                    </ul>
+
+                </div> <!-- /container -->
+
+            </div> <!-- /subnavbar-inner -->
+
+        </div> <!-- /subnavbar -->
+		
+	-->	
+
+
+<div class="wrapper" >
+          <div class="container">
+                <div class="row">
+                    <div class="span9 offset2">
+                        <div class="content">
+                            <h4 align="center"><u>Application for Admission into <font color="blue">Masters</font><font color="red"> in</font> <font color="blue">Information Technology</font> - Summer 2019 Intake</u></h4>
+                            <div class="module">
+
+
+<! STARING MY WORK HERE >
+
+<table>
+    <section class="phpcoding">
+    
+    <form action="insert_main.php" method="POST">
+        <tr><th>Applicant's Name :</th><td>   <input type="text" name="name" ></td></tr>
+        <tr><th>Mother's Name :</th><td>   <input type="text" name="Mname" ></td></tr>
+        <tr><th>Father's Name :</th><td>   <input type="text" name="father" ></td></tr>
+<!--         <tr><th>Date Of Birth :</th><td>   <input type="text" name="dob" ></td></tr> -->
+        <tr><th>Mobile :</th><td>   <input type="text" name="mobile" ></td></tr>
+        <tr><th>Gender :</th><td>   <input type="text" name="gender" ></td></tr>
+        <tr><th>Religion  :</th><td>   <input type="text" name="religion" ></td></tr>
+        <tr><th>Blood Group :</th><td>   <input type="text" name="blood" ></td></tr>
+        <tr><th>National ID :</th><td>   <input type="text" name="nid" ></td></tr>
+        <tr><th>Nationality :</th><td>   <input type="text" name="nation" ></td></tr>
+        <tr><th>Email :</th><td>   <input type="text" name="email" ></td></tr>
+        <tr><th>Present Address :</th><td>   <input type="text" name="address" ></td></tr>
+        <tr><th>Permanent Address :</th><td>   <input type="text" name="perm_adrs" ></td></tr>
+
+   <!--  SSC -->
+        <tr><th>Examination :</th><td>   <input type="text" name="ssc_exam" ></td></tr>
+        <tr><th>SSC Baord :</th><td>   <input type="text" name="ssc_board" ></td></tr>
+        <tr><th>Roll NO :</th><td>   <input type="text" name="ssc_roll" ></td></tr>
+        <tr><th>Result :</th><td>   <input type="text" name="ssc_result" ></td></tr>
+        <tr><th>Group :</th><td>   <input type="text" name="ssc_group" ></td></tr>
+        <tr><th>Year :</th><td>   <input type="text" name="ssc_year" ></td></tr>
+
+    <!-- HSC -->
+        <tr><th>Examination :</th><td>   <input type="text" name="hsc_exam" ></td></tr>
+        <tr><th>HSC Baord :</th><td>   <input type="text" name="hsc_board" ></td></tr>
+        <tr><th>Roll NO :</th><td>   <input type="text" name="hsc_roll" ></td></tr>
+        <tr><th>Result :</th><td>   <input type="text" name="hsc_result" ></td></tr>
+        <tr><th>Group :</th><td>   <input type="text" name="hsc_group" ></td></tr>
+        <tr><th>Year :</th><td>   <input type="text" name="hsc_year" ></td></tr>
+
+    <!-- Graduation -->
+        <tr><th>Examination :</th><td>   <input type="text" name="grad_exam" ></td></tr>
+        <tr><th>University :</th><td>   <input type="text" name="grad_versity" ></td></tr>
+        <tr><th>Subject :</th><td>   <input type="text" name="grad_sub" ></td></tr>
+        <tr><th>Result :</th><td>   <input type="text" name="grad_result" ></td></tr>
+        <tr><th>Passing Year :</th><td>   <input type="text" name="grad_year" ></td></tr>
+
+    <!-- Masters -->
+        <tr><th>Examination :</th><td>   <input type="text" name="m_exam" ></td></tr>
+        <tr><th>University :</th><td>   <input type="text" name="m_versity" ></td></tr>
+        <tr><th>Subject :</th><td>   <input type="text" name="m_sub" ></td></tr>
+        <tr><th>Result :</th><td>   <input type="text" name="m_result" ></td></tr>
+        <tr><th>Passing Year :</th><td>   <input type="text" name="m_year" ></td></tr>
+        
+
+<!--         <tr><th>Bed_size:</th><td>      <input type="text" name="d"   value="single/Double"></td></tr> -->
+ 
+        <tr><td></td><td><input type="submit" value="submit"></td></tr>
+    </form>
+    </section>
+    </table>
+
+
+
+
+
+
+                                        <div class="control-group">
+                                            <label class="control-label"></label>
+                                            <div class="controls">
+                                                <label class="checkbox">
+                                                    <input type="checkbox" id="all_correct" name="ssc_exam_type23" value="">
+                                                    <b>I hereby declare that all the above information are correct and assure that I will abide by all the rules.</b>
+                                                </label>
+                                            </div>
+                                        </div>
+<!--<div align="center">  <div class="g-recaptcha" data-sitekey="6LdorRETAAAAAGi0XlydtF5jLbCDUF2mk6Zm8suI"></div></div><br>-->
+                                        <div class="control-group" align="center">   
+                                            <div class="modal-footer">		
+                                                <div align="center">                                                                      
+                                                  <button align="center" id="submit" type="submit" class="btn btn-success">Submit</button> <a align="center" href="http://pmit.iitju.edu.bd" class="btn btn-danger">Cancel</a>
+                                                 </div>
+                                            </div>
+                                    </form>                                    
+                                </div>
+                            </div>
+
+
+
+                        </div><!--/.content-->
+                    </div><!--/.span9-->
+                </div>
+            </div><!--/.container-->
+<script>
+    function get_gpa_box(ID,txtTextBox1){
+       
+	var sValue;
+	var SID;
+
+	SID=ID.slice(-1);
+	sValue = document.getElementById(ID).options[document.getElementById(ID).options.selectedIndex].value;
+	// alert(sValue);
+	//No Box
+	if(sValue <= 3 || sValue >= 6){
+	//  document.getElementById(SID).innerHTML = "";
+	  document.getElementById(txtTextBox1).style.visibility="hidden";
+	}
+	
+	//GPA Box
+	if(sValue == 4 || sValue == 5){
+	 // document.getElementById(SID).innerHTML="GPA";
+	  document.getElementById(txtTextBox1).value= "";
+	  document.getElementById(txtTextBox1).style.visibility="visible";
+	}
+        if(ID =="grad_result" && sValue == 8){
+            //alert('readonly');
+            $('#grad_pass_year').hide('readonly', true);
+           // document.getElementById("grad_pass_year")[0].readOnly = true;
+       }else{
+            $('#grad_pass_year').prop('readonly', false);
+        }
+}
+     function fd(){
+       //  present_address
+       if ( $( "#as_same" ).prop( "checked" ) ){
+            var present_address = $("#present_address").val();
+            $('#permanent_address').text('');
+            $("#permanent_address").text(present_address);
+            $('#permanent_address').prop('readonly', true);
+        }else{
+             $('#permanent_address').text('');
+            $('#permanent_address').prop('readonly', false);
+
+        }
+    }
+    $( "#submit" ).click(function() {
+//         var v = grecaptcha.getResponse();
+//             //alert(recaptcha);
+//            if (v == '') {
+//                alert("Please Enter Recaptcha");
+//                $("#recaptcha-accessible-status").focus();
+//                return false;
+//            }
+      
+       
+            var applicant_name = $("#applicant_name").val();
+            if (applicant_name == '') {
+                alert("Please enter Applicant's Name.");
+                $("#applicant_name").focus();
+                return false;
+            }
+            var father_name = $("#father_name").val();
+            if (father_name == '') {
+                alert("Please enter Father's Name .");
+                $("#father_name").focus();
+                return false;
+            }
+            var mother_name = $("#mother_name").val();
+            if (mother_name == '') {
+                alert("Please enter Mother's Name");
+                $("#mother_name").focus();
+                return false;
+            }
+            var date_day = $("#date_day").val();
+            if (date_day == '') {
+                alert("Please select Day");
+                $("#date_day").focus();
+                return false;
+            }
+            var date_month = $("#date_month").val();
+            if (date_month == '') {
+                alert("Please select Month");
+                $("#date_month").focus();
+                return false;
+            }
+            var date_year = $("#date_year").val();
+            if (date_year == '') {
+                alert("Please select Year");
+                $("#date_year").focus();
+                return false;
+            }
+            var mobile = $("#mobile").val();
+            if (mobile == '') {
+                alert("Please enter mobile number.");
+                $("#mobile").focus();
+                return false;
+            }
+            var gender = $("#gender").val();
+            if (gender == '') {
+                alert("Please select Gender");
+                $("#gender").focus();
+                return false;
+            }
+            var religion = $("#religion").val();
+            if (religion == '') {
+                alert("Please select Religion");
+                $("#religion").focus();
+                return false;
+            }
+            var blood_group = $("#blood_group").val();
+            if (blood_group == '') {
+                alert("Please select Blood Group");
+                $("#blood_group").focus();
+                return false;
+            }
+            var nationality = $("#nationality").val();
+            if (nationality == '') {
+                alert("Please select Nationality");
+                $("#nationality").focus();
+                return false;
+            }
+           
+            var present_address = $("#present_address").val();
+            if (present_address == '') {
+                alert("Please enter Present Address.");
+                $("#present_address").focus();
+                return false;
+            }
+            var permanent_address = $("#permanent_address").val();
+            if (permanent_address == '') {
+                alert("Please enter Permanent Address.");
+                $("#permanent_address").focus();
+                return false;
+            }
+            var ssc_exam_type = $("#ssc_exam_type").val();
+            if (ssc_exam_type == '') {
+                alert("Please select ssc exam type");
+                $("#ssc_exam_type").focus();
+                return false;
+            }
+            var ssc_board = $("#ssc_board").val();
+            if (ssc_board == '') {
+                alert("Please select ssc board");
+                $("#ssc_board").focus();
+                return false;
+            }
+            var ssc_roll_no = $("#ssc_roll_no").val();
+            if (ssc_roll_no == '') {
+                alert("Please enter ssc roll no");
+                $("#ssc_roll_no").focus();
+                return false;
+            }
+            var ssc_result = $("#ssc_result").val();
+            if (ssc_result == '') {
+                alert("Please select ssc result");
+                $("#ssc_result").focus();
+                return false;
+            }
+            var ssc_gpa = $("#ssc_gpa").val();
+            if (ssc_result == 4 ||ssc_result == 5 ) {
+                if(ssc_gpa == ''){
+                    alert("Please enter SSC GPA");
+                    $("#ssc_gpa").focus();
+                    return false;
+               }
+            }
+            var ssc_group = $("#ssc_group").val();
+            if (ssc_group == '') {
+                alert("Please select ssc group");
+                $("#ssc_group").focus();
+                return false;
+            }
+            var ssc_pass_year = $("#ssc_pass_year").val();
+            if (ssc_pass_year == '') {
+                alert("Please select ssc pass year");
+                $("#ssc_pass_year").focus();
+                return false;
+            }
+            var hsc_exam_type = $("#hsc_exam_type").val();
+            if (hsc_exam_type == '') {
+                alert("Please select hsc exam type");
+                $("#hsc_exam_type").focus();
+                return false;
+            }
+            var hsc_board = $("#hsc_board").val();
+            if (hsc_board == '') {
+                alert("Please select hsc board");
+                $("#hsc_board").focus();
+                return false;
+            }
+            var hsc_roll_no = $("#hsc_roll_no").val();
+            if (hsc_roll_no == '') {
+                alert("Please enter hsc roll no");
+                $("#hsc_roll_no").focus();
+                return false;
+            }
+            var hsc_result = $("#hsc_result").val();
+            if (hsc_result == '') {
+                alert("Please select hsc result");
+                $("#hsc_result").focus();
+                return false;
+            }
+              var hsc_gpa = $("#hsc_gpa").val();
+            if (hsc_result == 4 ||hsc_result == 5 ) {
+                if(hsc_gpa == ''){
+                    alert("Please enter HSC GPA");
+                    $("#hsc_gpa").focus();
+                    return false;
+               }
+            }
+            
+            var hsc_group = $("#hsc_group").val();
+            if (hsc_group == '') {
+                alert("Please select hsc group");
+                $("#hsc_group").focus();
+                return false;
+            }
+            var hsc_pass_year = $("#hsc_pass_year").val();
+            if (hsc_pass_year == '') {
+                alert("Please select hsc pass year");
+                $("#hsc_pass_year").focus();
+                return false;
+            }
+          
+          
+            var grad_exam_type = $("#grad_exam_type").val();
+            if (grad_exam_type == '') {
+                alert("Please select Graduation examination");
+                $("#grad_exam_type").focus();
+                return false;
+            }
+            var grad_subject = $("#grad_subject").val();
+            if (grad_subject == '') {
+                alert("Please enter Graduation subject");
+                $("#grad_subject").focus();
+                return false;
+            }
+            var grad_university = $("#grad_university").val();
+            if (grad_university == '') {
+                alert("Please enter Graduation University/Institute");
+                $("#grad_university").focus();
+                return false;
+            }
+            var grad_result = $("#grad_result").val();
+            if (grad_result == '') {
+                alert("Please select Graduation  result");
+                $("#grad_result").focus();
+                return false;
+            }
+             var grad_gpa = $("#grad_gpa").val();
+            if (grad_result == 4 ||grad_result == 5 ) {
+                if(grad_gpa == ''){
+                    alert("Please enter Graduation GPA");
+                    $("#grad_gpa").focus();
+                    return false;
+               }
+            }
+            
+            var grad_pass_year = $("#grad_pass_year").val();
+            if (grad_pass_year == '') {
+                alert("Please select Graduation  passing year");
+                $("#grad_pass_year").focus();
+                return false;
+            }
+            var grad_duration = $("#grad_duration").val();
+            if (grad_duration == '') {
+                alert("Please select Course duration");
+                $("#grad_duration").focus();
+                return false;
+            }
+          
+        if ( $( "#all_correct" ).prop( "checked" ) ){
+           
+        }else{
+             alert("Please accept terms and condition.");
+                $("#all_correct").focus();
+                return false;
+        }
+         if(!confirm("Are you sure you want to Submit? Your information can not be changed after you submit.")){
+           return false;
+       }
+
+     });
+
+</script>
+  
+    <style type="text/css">
+            .auto-style1 {
+                text-align: center;
+                text-decoration: underline;
+                font-size: medium;
+            }
+            .auto-style2 {
+                text-align: center;
+                font-size: medium;
+            }
+    </style>
+        <style media="print">
+            .noPrint{ display: none;
+            }
+        </style>
+        
+        <script type="text/javascript">
+        jQuery(function($){
+  // $("#date").mask("99/99/9999",{placeholder:"mm/dd/yyyy"});
+   //$("#phone").mask("(999) 999-9999");
+   $("#mobile").mask("99999999999");
+  // $("#ssc_roll_no").mask("999999");
+  // $("#hsc_roll_no").mask("999999");
+ //  $("#ssn").mask("999-99-9999");
+});
+        </script>
+          <!--<script src="//code.jquery.com/jquery-1.10.2.js"></script>-->
+            <!--<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.3.1/jquery.maskedinput.min.js"></script>-->
+
+               
+</br>
+
+	<div class="footer-area2">
+		<div class="copyright text-center"> 
+			<p>PMIT_Online_Application &copy;  2019 &nbsp; |&nbsp; All rights reserved.</p>
+		</div>
+	</div>
+    
+<script src=""></script>
+
+<script src=""></script></div>
+</body>
+</html>
